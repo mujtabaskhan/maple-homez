@@ -65,17 +65,18 @@
 html {
     scroll-behavior: smooth;
 }
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  }
-  
-  .fade-in.visible {
+}
+
+.fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
+
 
 
 a[disabled],
@@ -655,8 +656,8 @@ mark,
 @media (min-width: 993px) and (min-width: 481px) {
     .about .about-quote {
         position: absolute;
-        right: -30px;
-        bottom: -30px;
+        right: -100px;
+        bottom: -90px;
         float: none;
     }
 }
@@ -3623,12 +3624,12 @@ mark,
     width: 56px;
     height: 56px;
     transition: 0.3s;
-  }
+}
 
-  .footer .footer-content .social-links a:hover {
+.footer .footer-content .social-links a:hover {
     background: var(--color-primary);
     text-decoration: none;
-  }
+}
 
 
 /* 36. header_01
@@ -4158,4 +4159,24 @@ ul {
 
 .bg-color-white {
     background-color: #fff;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
 }
